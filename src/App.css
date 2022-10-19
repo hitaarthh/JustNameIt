@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  color: #EEEEEE;
+  background-color: #393E46;
+  position: relative;
+margin:auto;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* #161B22  Black*/
+/* #393E46  Grey*/ 
+/* #238636  Sky Blue*/
+/* #EEEEEE  White*/
+
+/* ================================= Navbar ================================= */
+
+.navbar-style{
+  background-color: #161B22;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.search-btn{
+  width: 180px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #161B22;
+  cursor: pointer;
+  border: auto;
+  background-size: 400%;
+  border-radius: 50px;
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  background-image: linear-gradient(to right, #EEEEEE, #238636);
+}
+.search-btn:hover {
+  background-position: 100% 0;
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.search-bar{
+  border: none;
+  width: auto;
+  border-radius: 50px;
+}
+.brand-parent-div{
+  align-items: center;
+}
+.brand-name{
+  margin: 0;
+  margin-left: 10px;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+.navbar-logo{
+  max-width: 40px;
+}
+
+
+@media (max-width: 768px) {  
+  .nav-item {
+  	padding: 5px!important;
+  }
+}
+
+/* ================================= Banner ================================= */
+
+.banner {
+  height: 80px;
+  background-color: #238636;
+  position: relative;
+}
+.banner-title{
+  color: white;
+  position: center;
+  padding: 15px;
+  bottom: auto;
+  font-size: auto;
+}
+@media (max-width: 768px) {  
+  .banner {
+  	padding: 5px!important;
+  }
+}
+/* ================================= Card ================================= */
+
+.poster-img{
+  border-radius: 5px;
+  display: block;
+}
+.grow { 
+  position: relative;
+  transition: all .2s ease-in-out; 
+}
+.grow:hover { 
+  transform: scale(1.2); 
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.grow:hover .movie-details  {
+  /*becomes visible on hover*/
+  opacity: 1;       
+}
+.movie-details {
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), #161B22);
+  /*positioned relative to parent div (grow) */
+  position: absolute;   
+  /* bottom margin is 0 so that it
+  coincides with container's bottom margin*/
+  bottom: 0;           
+  color: white;
+  width: 100%;
+  height: 50%;
+  padding: 0 10px;
+  /*invisible because opacity is 0*/
+  opacity: 0;           
+  transition: 0.6s;
+  border-radius: 5px;
+  cursor: context-menu;
+}
+.movie-title {
+  font-weight: 500;
+}
+.description{
+  font-size: 10px;
+}
+.description-bottom{
+  font-size: 10px;
+  font-weight: 500;
+  position: absolute;  
+  bottom: 0;           
+  padding: 5px; 
+}
+
+@media (max-width: 576px) {  
+  .movie-card {
+  	padding: 20px 50px !important;
+  }
+}
+
+/* ================================= Movie Detail ================================= */
+.bg-container{
+  margin-top: 10px;
+  padding-bottom: 50px;
+  position: relative;
+  height: fit-content;
+  background-image: linear-gradient(to right,#161B22f4, #000000c8, #000000a4);
+}
+.bg-poster {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -10;
+}
+.detail-poster{
+  border-radius: 5px;
+  border: 2px solid #238636;
+}
+.stickey-tabs{
+  width: fit-content;
+  font-weight: 700;
+  color: #238636;
+  border-radius: 50px;
+  display:inline;
+  margin-right: 10px;
+}
+.geners{
+  padding: 5px 15px;
+  font-weight: normal;
+  border-radius: 5px;
+  border: 1px solid #238636;
+}
+.producer{
+  padding: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  max-height: 80px;
+  background-color: white;
+  border-radius: 5px;
+  max-width: 250px;
+}
+
+/* ================================= Home ================================= */
+.about-underline{
+
+  border-bottom: 2px solid #238636;
+}
+.tech{
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 1px solid #238636;
+  color: #238636;
+  display:inline;
+  margin-right: 10px;
+}
+.api-link{
+  color: #238636;
+  text-decoration: none;
+}
+.api-link:hover {
+  color: #04ac2b;
+}
+/* ================================= Footer ================================= */
+.footer-style{
+  display: flex;
+  align-items: center;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;   
+  background-color: #161B22;
+  border-top: 1px solid #238636;
+}
+.github-icon{
+  min-width: 30px;
+}
