@@ -31,7 +31,7 @@ function Home() {
               <footer className="container-fluid footer-style">
         <div className="container d-flex justify-content-between align-middle">
           <span>© Copyright 2022. All Rights Reserved.</span>
-          <a href="https://github.com/hitaarthh/Just-Name-It" target="_main"><img className="github-icon" src={github} alt="github"/></a>
+          <a href="https://github.com/hitaarthh/JustNameIt" target="_main"><img className="github-icon" src={github} alt="github"/></a>
         </div>
       </footer>
       </div>
